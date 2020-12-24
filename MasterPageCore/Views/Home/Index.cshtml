@@ -1,0 +1,40 @@
+﻿@model IEnumerable<Student>;
+  
+    <!Doctype html>
+    <html>
+    <head>
+        <title>
+            @{ViewData["Title"] = "Index";}
+        </title>
+    </head>
+    <body>
+        <h1>Index Page</h1>
+       <table>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>name</th>
+                    <th>age</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @item.id
+                        </td>
+                        <td>
+                            @item.name
+
+                        </td>
+                        <td>
+                            @item.age
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/lib/twitter-bootstrap/css/bootstrap.css" rel="stylesheet" />
+   
+</head>
+<body>
+    <div class="container">
+        <div>
+            <header class="jumbotron">
+                <h1>Header section</h1>
+            </header>
+        </div>
+        <div class="text-center">
+            @RenderBody()
+        </div>
+        <div>
+            <footer class="jumbotron">
+                <h1>Footer section</h1>
+            </footer>
+        </div>
+    </div>
+    <script src="~/lib/jquery/jquery.js"></script>
+    <script src="~/lib/twitter-bootstrap/js/bootstrap.js"></script>
+</body>
+</html>
